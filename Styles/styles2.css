@@ -1,0 +1,315 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'American Typewriter', serif;
+  box-sizing: 0;
+  color: white;
+  
+}
+
+
+body{
+height: 100%;
+width: 100%;
+background: linear-gradient(45deg, #ff4e03, #f932f2, rgb(251, 188, 0),  #6f01e5);
+background-size: 300% 300%;
+animation: color 12s ease-in-out infinite;
+}
+
+.header-text{
+font-size: 30px;
+margin-top: 10%;
+display: flex;
+}
+.header-text h1{
+padding:  0px 10px;
+font-size: 50px;
+background-color: #13dcdf;
+
+}
+.About h1{
+background-color: #13dcdf;
+}
+#header{
+width: 100%;
+height: 100vh;
+}
+.container{
+padding: 10px 10%;
+}
+.menu{
+display: flex;
+position: relative;
+}
+
+
+
+
+nav.HomeNav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+padding: 10px 10px;
+list-style: none;
+
+}
+nav.HomeNav ul{
+list-style: none;
+}
+
+nav.HomeNav ul li{
+display: block;
+
+margin: 10px 20px;
+
+}
+nav.HomeNav ul li a{
+color: rgb(173, 247, 0);
+text-decoration: none;
+font-size: 40px;
+position: relative;
+
+}
+
+nav.HomeNav ul li a::after{
+content: '';
+width: 0;
+height: 3px;
+background: red;
+position: absolute;
+left: 0;
+bottom: -6px;
+transition: 0.5s;
+}
+
+nav.HomeNav ul li a:hover::after{
+width: 100%;
+}
+
+
+nav.topbar{
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+background-color: white;
+
+
+
+
+
+}
+nav.topbar ul{
+
+  margin: 0;
+  padding: 0;
+  
+}
+nav.topbar ul li{
+  
+display: inline;
+align-items: center;
+list-style: none;
+padding: 0px 10px;
+margin: 10px 20px;
+
+}
+nav.topbar ul li a{
+left: 40%;
+float: none;
+
+color: blue;
+text-decoration: none;
+font-size: 20px;
+position: relative;
+}
+
+nav.topbar ul li a::after{
+content: '';
+width: 0;
+height: 3px;
+background: red;
+position: absolute;
+left: 0;
+bottom: -6px;
+transition: 0.5s;
+}
+
+nav.topbar ul li a:hover::after{
+width: 100%;
+}
+
+
+.About{
+padding: 10% 10%;
+}
+
+.About h1{
+font-size: 40px;
+}
+
+.About p{
+font-size: 30px;
+}
+
+
+div.TP{
+
+display: flex;
+color: white;
+
+
+}
+div.TP h1{
+
+position: absolute;
+padding: 15px 10px;
+
+}
+.c1{
+
+flex: 1;
+width: 20%;
+padding: 50px 30px 10px;
+margin-top: 10px;
+margin-right: 10%;
+}
+.tag span {
+padding: 6px 10px;
+background: #D0E8E4;
+border-radius: 20px;
+color: #091747;
+font-family: Arial;
+font-size: 12px;
+margin: 0 4px 8px 0;
+font-weight: 500;
+display: inline-block;
+word-wrap: break-word;
+white-space: normal;
+}
+
+div.LangTags ul li{
+display: inline-block;
+list-style: none;
+
+margin: 40px 0px -40px;
+
+}
+
+div.LangTags ul li a {
+box-shadow: inset 0 0 0 0 #54d6cd;
+color: #2600ff;
+margin: 0 -.25rem;
+padding: 0 .25rem;
+transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+div.LangTags ul li a:hover {
+
+color: white;
+}
+
+
+.footer{
+padding: 40px 0;
+}
+.footer .social{
+text-align: center;
+padding-bottom: 25px;
+}
+.footer .social a{
+line-height: 38px;
+display: block;
+text-align: center;
+margin: 0 8px;
+}
+
+.TS{
+right: 32%;
+}
+
+#myPDF{
+width: 90%;
+height: 500px;
+}
+
+.Resume{
+margin: 20px 5%;
+width: 100%;
+}
+div.Resume a {
+box-shadow: inset 0 0 0 0 #54d6cd;
+color: #0d00ff;
+margin: 0 -.25rem;
+padding: 0 .25rem;
+transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+div.Resume a:hover {
+
+color: white;
+}
+
+.DS{
+right: 14%;
+}
+
+
+
+.arrows{
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+cursor: pointer;
+margin: 34%;
+}
+
+.arr{
+padding: 7px;
+
+height: 10px;
+width: 10px;
+border-radius: 10%;
+margin: 15px;
+transition: 0.4s ease;
+}
+
+.arr div:hover{
+box-shadow: 0px 0px 20px 20px white;
+}
+
+.arr div{
+position: absolute;
+height: 10px;
+width: 10px;
+border-top: 8px solid black;
+border-left: 8px solid black;
+border-bottom: 8px solid black;
+border-right: 8px solid black;
+transform: rotate(45deg);
+left: 5px;
+top: 15px;
+transition: 0.4s ease;
+}
+.right{
+transform: rotate(90deg);
+}
+
+.down{
+transform: rotate(180deg);
+}
+
+@keyframes color {
+  0%{
+      background-position: 0 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0 50%;
+  }
+
+}
